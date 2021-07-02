@@ -4,8 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Config from './Config';
 
 import { Header } from './components/Header';
-import { Home } from './pages/Home';
-import { Sobre } from './pages/Sobre';
+import { Cart } from './pages/Cart';
 
 class App extends Component {
 
@@ -15,8 +14,8 @@ class App extends Component {
 				<div>
 					<Header />
 
-					<Route exact path="/" component={Home} />
-					<Route path="/sobre" component={Sobre} />
+					<Cart />
+					<Route exact path="/" component={Cart} />
 				</div>
 			</BrowserRouter>
 		);
