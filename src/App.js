@@ -14,7 +14,7 @@ class App extends Component {
 				<div>
 					<Header />
 
-					<Cart />
+					
 					<Route exact path="/" component={Cart} />
 				</div>
 			</BrowserRouter>
