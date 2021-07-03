@@ -1,43 +1,24 @@
 import React, { Component } from 'react';
 
 export class Produto extends Component {
-
+	constructor(props) {
+		super(props);
+		this.state = {
+			teclado:{name:'Teclado', estoque:10, preco:41},
+			qt:this.props.qt,
+		};
+	}
+	
 	render() {
 		return (
 			<div className="container">
+
 				<div className="left">
-					<div className="produto disabled">
-						<strong>Teclado</strong>
-						<p>Estoque: 2</p>
-						<div class="preco">
-							<strong>R$ 28,00</strong>
-						</div>
-						<button>Adicionar ao carrinho</button>
-					</div>
-
 					<div className="produto">
-						<strong>Mouse</strong>
-						<p>Estoque: 5</p>
+						<strong>{this.state.teclado.name}</strong>
+						<p>Estoque: {this.state.teclado.estoque}</p>
 						<div class="preco">
-							<strong>R$ 36,00</strong>
-						</div>
-						<button>Adicionar ao carrinho</button>
-					</div>
-
-					<div className="produto">
-						<strong>Monitor</strong>
-						<p>Estoque: 3</p>
-						<div class="preco">
-							<strong>R$ 299,99</strong>
-						</div>
-						<button>Adicionar ao carrinho</button>
-					</div>
-
-					<div className="produto">
-						<strong>CPU</strong>
-						<p>Estoque: 0</p>
-						<div class="preco">
-							<strong>R$ 1.099,00</strong>
+							<strong>R$ {this.state.teclado.preco}</strong>
 						</div>
 						<button>Adicionar ao carrinho</button>
 					</div>
@@ -46,15 +27,15 @@ export class Produto extends Component {
 				<div className="cart">
 					<div className="prods">
 						<div>
-							<strong>Teclado</strong>
-							<p>(Qt:3)</p>
+							<strong>Pega nome do prod add ao clicar em add</strong>
+							<p>Qtde: pega a qtde do prod add</p>
 						</div>
 						<div>
-							<strong>R$ 39,00</strong>
+							<strong>R$ pega o preço do prod add</strong>
 						</div>
 					</div>
 					<div className="line"></div>
-					<div className="total">Total R$ </div>
+					<div className="total">Total R$ Pega a soma dos prods</div>
 				</div>
 				
 			</div>
