@@ -29,7 +29,7 @@ export class Produtos extends React.Component {
     return (
     <div className="produtos">
       {this.state.produtos.map((item)=>
-        <Produto key={item.id}nome={item.nome} estoque={item.estoque} price={item.price} />
+        <Produto key={item.id} nome={item.nome} estoque={item.estoque} price={item.price} />
       )}
     </div>
     );
