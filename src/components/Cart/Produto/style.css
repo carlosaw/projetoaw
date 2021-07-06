@@ -3,42 +3,39 @@ body {
 }
 .container {
   display: flex;
-  justify-content: space-between;
+}
+.produtos {
+  display: flex;
 }
 .produto {
-  border: 1.5px dashed #000;
+  border: 1px dashed #333;
+  margin: 10px;
+  box-sizing: border-box;
   padding: 10px;
-  margin: 5px;
-  display: inline-block;
 }
-.produto.disabled {
-  color: #CCC;
-  opacity: 0.3;
+.produto h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: -20px;
 }
-.produto strong {
-  font-size: 25px;
+.produto h5 {
+  font-size: 12px;
+  color: #999;
 }
 .produto p {
-  margin-top: 0px;
-  color: #b3adad;
+  font-size: 25px;
+  font-weight: bold;
 }
-.preco strong {
-  font-size: 18px;
-}
-.produto button {
-  font-size: 10px;
-  margin-top: 21px;
+button {
+  padding: 5px;
 }
 
-.cart p {
-  margin-top: 0px;
-}
-.prods {
+.cart {
   display: flex;
   justify-content: space-between;
-  width: 200px;
-  padding-right: 55px;
+  padding-right: 40px;
 }
-.line {
-  border-bottom: 2px solid #CCC;
+.compra {
+  display: contents;
 }

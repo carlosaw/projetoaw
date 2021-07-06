@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Produto } from '../../components/Cart/Produto/Produto';
-
+import { Produtos } from '../../components/Cart/Produto/Produto';
 export class Cart extends Component {
 
 	constructor(props) {
@@ -17,8 +15,17 @@ export class Cart extends Component {
 
 	render() {
 		return (
-			<div>
-				<Produto />
+			<div className="cart">
+				<Produtos />
+
+				<div className="compra">
+					<div className="head">
+						<div className="nomeProduto"><strong>Produto</strong></div>
+						<div className="qtProduto">Qtde:</div>
+					</div>
+					<div className="precoProduto"><strong>Preço</strong></div>
+				</div>
+
 			</div>
 		);		
 	}
