@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Produtos } from '../../components/Cart/Produto/Produto';
 
-
 export class Cart extends Component {
 
 	constructor(props) {
@@ -10,11 +9,7 @@ export class Cart extends Component {
 			
 		};
 	}
-
-	componentDidMount() {
-		
-	}
-
+	
 	render() {
 		return (
 			<div className="cart">

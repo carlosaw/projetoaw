@@ -1,10 +1,11 @@
 import React from 'react';
 
-
 export class Produto extends React.Component {
-  adicionar = ()=> {
-    alert('clicou'+this.props.name);
+  
+	adicionar = ()=> {
+    alert('clicou '+this.props.name+'estoque: '+this.props.stock+ 'preço: '+this.props.price);
   }
+
   render() {
     return (
       <div className="produto">
