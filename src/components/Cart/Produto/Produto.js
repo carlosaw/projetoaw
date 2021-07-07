@@ -14,10 +14,10 @@ export class Cart extends React.Component {
 			<div className="cart">
 				<div className="compra">
 					<div className="head">
-						<div className="nomeProduto"><strong>Produto</strong></div>
-						<div className="precoProduto"><strong>Preço</strong></div>
+						<h3><strong>Produto</strong></h3>
+						<h3><strong>Preço</strong></h3>
 					</div><br/>
-					<div className="qtProduto">(Qt:...)</div>	
+					<h5>(Qt:...)</h5>	
 				</div>
 
 			</div>
