@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Config from './Config';
 
 import { Header } from './components/Header';
-import { Cart } from './pages/Cart';
+import { Home } from './pages/Home';
 
 class App extends Component {
 
@@ -15,7 +15,7 @@ class App extends Component {
 					<Header />
 
 					
-					<Route exact path="/" component={Cart} />
+					<Route exact path="/" component={Home} />
 				</div>
 			</BrowserRouter>
 		);

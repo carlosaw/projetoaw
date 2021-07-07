@@ -1,9 +1,33 @@
 import React from 'react';
 
+export class Cart extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			
+		};
+	}
+	
+	render() {
+		return (
+			<div className="cart">
+				<div className="compra">
+					<div className="head">
+						<div className="nomeProduto"><strong>Produto</strong></div>
+						<div className="precoProduto"><strong>Preço</strong></div>
+					</div><br/>
+					<div className="qtProduto">(Qt:...)</div>	
+				</div>
+
+			</div>
+		);		
+	}
+}
 export class Produto extends React.Component {
   
 	adicionar = ()=> {
-    alert('clicou '+this.props.name+'estoque: '+this.props.stock+ 'preço: '+this.props.price);
+    alert('clicou '+this.props.name+' '+'estoque:'+this.props.stock+' '+ 'preço:'+this.props.price);
   }
 
   render() {

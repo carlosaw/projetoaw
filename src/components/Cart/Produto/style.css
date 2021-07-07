@@ -4,6 +4,9 @@ body {
 .container {
   display: flex;
 }
+.title h1 {
+  text-align: center;
+}
 .produtos {
   display: flex;
 }
@@ -37,5 +40,21 @@ button {
   padding-right: 40px;
 }
 .compra {
-  display: contents;
+  flex: 1;
+  max-width: 350px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 195px;
+  margin-top: 10px;
+}
+.head h3 {
+  margin-top: 5px;
+}
+.qtProduto {
+  margin-top: -15px;
+}
+.compra h5 {
+  margin-top: -20px;
 }
