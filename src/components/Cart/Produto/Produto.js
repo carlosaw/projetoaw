@@ -12,14 +12,39 @@ export class Cart extends React.Component {
 	render() {
 		return (
 			<div className="cart">
-				<div className="compra">
-					<div className="head">
-						<h3><strong>Produto</strong></h3>
-						<h3><strong>Preço</strong></h3>
-					</div><br/>
-					<h5>(Qt:...)</h5>	
-				</div>
-
+				<ul className="compra">
+          <li>
+            <div className="head">
+              <h3><strong>Produto</strong></h3>
+              <h3><strong>Preço</strong></h3>
+            </div><br/>
+            <h5>(Qt:...)</h5>
+          </li>
+          <li>
+            <div className="head">
+              <h3><strong>Produto</strong></h3>
+              <h3><strong>Preço</strong></h3>
+            </div><br/>
+            <h5>(Qt:...)</h5>
+          </li>
+          <li>
+            <div className="head">
+              <h3><strong>Produto</strong></h3>
+              <h3><strong>Preço</strong></h3>
+            </div><br/>
+            <h5>(Qt:...)</h5>
+          </li>
+          <li>
+            <div className="head">
+              <h3><strong>Produto</strong></h3>
+              <h3><strong>Preço</strong></h3>
+            </div><br/>
+            <h5>(Qt:...)</h5>
+          </li>
+          <hr/>
+          <h3>Total:</h3>
+				</ul>
+        
 			</div>
 		);		
 	}
