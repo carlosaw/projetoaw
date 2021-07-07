@@ -41,7 +41,6 @@ button {
 }
 .compra {
   flex: 1;
-  max-width: 350px;
 }
 .head {
   display: flex;
